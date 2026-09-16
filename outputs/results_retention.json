@@ -1,0 +1,236 @@
+{
+  "gate_30": {
+    "users": 44700,
+    "d1_users": 20034,
+    "d1_rate": 44.819,
+    "d1_ci": [
+      44.358,
+      45.28
+    ],
+    "d7_users": 8502,
+    "d7_rate": 19.02,
+    "d7_ci": [
+      18.659,
+      19.387
+    ],
+    "d1_to_d7_survival_pct": 33.32,
+    "avg_gamerounds": 52.46,
+    "median_gamerounds": 17.0,
+    "p90_gamerounds": 135.0,
+    "played_rate_pct": 95.667
+  },
+  "gate_40": {
+    "users": 45489,
+    "d1_users": 20119,
+    "d1_rate": 44.228,
+    "d1_ci": [
+      43.772,
+      44.685
+    ],
+    "d7_users": 8279,
+    "d7_rate": 18.2,
+    "d7_ci": [
+      17.848,
+      18.557
+    ],
+    "d1_to_d7_survival_pct": 32.34,
+    "avg_gamerounds": 51.3,
+    "median_gamerounds": 16.0,
+    "p90_gamerounds": 134.0,
+    "played_rate_pct": 95.478
+  },
+  "difference": {
+    "d1_abs_pp": 0.591,
+    "d1_rel_pct": 1.34,
+    "d7_abs_pp": 0.82,
+    "d7_rel_pct": 4.51,
+    "d1_d7_survival_pp": 0.98,
+    "avg_gamerounds_pct": 2.26
+  },
+  "impact_per_million": {
+    "d7_users_gate_30": 190200,
+    "d7_users_gate_40": 182000,
+    "d7_users_lost": 8200,
+    "d1_users_lost": 5910
+  },
+  "_funnel": {
+    "gate_30": {
+      "install": {
+        "users": 44700,
+        "pct": 100.0
+      },
+      "played": {
+        "users": 42763,
+        "pct": 95.67
+      },
+      "d1_retained": {
+        "users": 20034,
+        "pct": 44.82
+      },
+      "d7_retained": {
+        "users": 8502,
+        "pct": 19.02
+      }
+    },
+    "gate_40": {
+      "install": {
+        "users": 45489,
+        "pct": 100.0
+      },
+      "played": {
+        "users": 43432,
+        "pct": 95.48
+      },
+      "d1_retained": {
+        "users": 20119,
+        "pct": 44.23
+      },
+      "d7_retained": {
+        "users": 8279,
+        "pct": 18.2
+      }
+    }
+  },
+  "_stratified": [
+    {
+      "rounds_bucket": "0 轮",
+      "version": "gate_30",
+      "users": 1937,
+      "share_pct": 4.33,
+      "d1_rate": 2.12,
+      "d7_rate": 0.83
+    },
+    {
+      "rounds_bucket": "0 轮",
+      "version": "gate_40",
+      "users": 2057,
+      "share_pct": 4.52,
+      "d1_rate": 2.24,
+      "d7_rate": 0.63
+    },
+    {
+      "rounds_bucket": "1-5 轮",
+      "version": "gate_30",
+      "users": 10119,
+      "share_pct": 22.64,
+      "d1_rate": 7.31,
+      "d7_rate": 1.29
+    },
+    {
+      "rounds_bucket": "1-5 轮",
+      "version": "gate_40",
+      "users": 10604,
+      "share_pct": 23.31,
+      "d1_rate": 8.1,
+      "d7_rate": 1.44
+    },
+    {
+      "rounds_bucket": "6-20 轮",
+      "version": "gate_30",
+      "users": 12428,
+      "share_pct": 27.8,
+      "d1_rate": 31.16,
+      "d7_rate": 5.03
+    },
+    {
+      "rounds_bucket": "6-20 轮",
+      "version": "gate_40",
+      "users": 12657,
+      "share_pct": 27.82,
+      "d1_rate": 30.64,
+      "d7_rate": 4.75
+    },
+    {
+      "rounds_bucket": "21-50 轮",
+      "version": "gate_30",
+      "users": 9080,
+      "share_pct": 20.31,
+      "d1_rate": 63.73,
+      "d7_rate": 16.07
+    },
+    {
+      "rounds_bucket": "21-50 轮",
+      "version": "gate_40",
+      "users": 8495,
+      "share_pct": 18.67,
+      "d1_rate": 63.57,
+      "d7_rate": 14.56
+    },
+    {
+      "rounds_bucket": "51-100 轮",
+      "version": "gate_30",
+      "users": 5041,
+      "share_pct": 11.28,
+      "d1_rate": 81.23,
+      "d7_rate": 38.09
+    },
+    {
+      "rounds_bucket": "51-100 轮",
+      "version": "gate_40",
+      "users": 5386,
+      "share_pct": 11.84,
+      "d1_rate": 79.63,
+      "d7_rate": 33.31
+    },
+    {
+      "rounds_bucket": "100 轮以上",
+      "version": "gate_30",
+      "users": 6095,
+      "share_pct": 13.64,
+      "d1_rate": 90.21,
+      "d7_rate": 71.39
+    },
+    {
+      "rounds_bucket": "100 轮以上",
+      "version": "gate_40",
+      "users": 6290,
+      "share_pct": 13.83,
+      "d1_rate": 89.78,
+      "d7_rate": 71.24
+    }
+  ],
+  "_stratified_diff": [
+    {
+      "rounds_bucket": "0 轮",
+      "users_total": 3994,
+      "d7_diff_pp": 0.2,
+      "d7_gate_30": 0.83,
+      "d7_gate_40": 0.63
+    },
+    {
+      "rounds_bucket": "1-5 轮",
+      "users_total": 20723,
+      "d7_diff_pp": -0.15,
+      "d7_gate_30": 1.29,
+      "d7_gate_40": 1.44
+    },
+    {
+      "rounds_bucket": "6-20 轮",
+      "users_total": 25085,
+      "d7_diff_pp": 0.28,
+      "d7_gate_30": 5.03,
+      "d7_gate_40": 4.75
+    },
+    {
+      "rounds_bucket": "21-50 轮",
+      "users_total": 17575,
+      "d7_diff_pp": 1.51,
+      "d7_gate_30": 16.07,
+      "d7_gate_40": 14.56
+    },
+    {
+      "rounds_bucket": "51-100 轮",
+      "users_total": 10427,
+      "d7_diff_pp": 4.78,
+      "d7_gate_30": 38.09,
+      "d7_gate_40": 33.31
+    },
+    {
+      "rounds_bucket": "100 轮以上",
+      "users_total": 12385,
+      "d7_diff_pp": 0.15,
+      "d7_gate_30": 71.39,
+      "d7_gate_40": 71.24
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "raw_rows": 90189,
+  "columns": [
+    "userid",
+    "version",
+    "sum_gamerounds",
+    "retention_1",
+    "retention_7"
+  ],
+  "duplicated_userids": 0,
+  "missing": {
+    "userid": 0,
+    "version": 0,
+    "sum_gamerounds": 0,
+    "retention_1": 0,
+    "retention_7": 0
+  },
+  "total_missing": 0,
+  "group_counts": {
+    "gate_30": 44700,
+    "gate_40": 45489
+  },
+  "group_share": {
+    "gate_30": 49.56,
+    "gate_40": 50.44
+  },
+  "max_group_imbalance_pp": 0.44,
+  "rounds_q1": 5.0,
+  "rounds_q3": 51.0,
+  "rounds_iqr_upper_fence": 120.0,
+  "outlier_users": 10177,
+  "outlier_share_pct": 11.284,
+  "max_gamerounds": 49854,
+  "max_gamerounds_userid": 6390605,
+  "zero_round_users": 3994,
+  "zero_round_share_pct": 4.43,
+  "zero_round_d7_retention_pct": 0.726,
+  "rounds_describe": {
+    "count": 90189.0,
+    "mean": 51.87,
+    "std": 195.05,
+    "min": 0.0,
+    "50%": 16.0,
+    "75%": 51.0,
+    "90%": 134.0,
+    "95%": 221.0,
+    "99%": 493.0,
+    "max": 49854.0
+  },
+  "clean_rows": 90189,
+  "derived_columns": [
+    "retained_1",
+    "retained_7",
+    "is_outlier",
+    "played_any",
+    "log_rounds",
+    "rounds_bucket",
+    "is_control"
+  ]
+}

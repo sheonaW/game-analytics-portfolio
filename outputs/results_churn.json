@@ -1,0 +1,261 @@
+{
+  "sample": {
+    "rows": 90189,
+    "positive_class": "7 日留存（retention_7 = True）",
+    "positive_rate_pct": 18.61,
+    "features_model_a": [
+      "实验分组（gate_40=1）"
+    ],
+    "features_model_b": [
+      "实验分组（gate_40=1）",
+      "是否次日留存",
+      "是否曾游玩（≥1轮）",
+      "游玩深度 log(轮次+1)",
+      "是否游玩>20轮",
+      "是否游玩>50轮",
+      "游玩深度等级(0-5)"
+    ]
+  },
+  "models": [
+    {
+      "model": "Model A · 仅实验分组",
+      "auc": 0.5103,
+      "pr_auc": 0.1893,
+      "accuracy": 0.814,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "cv_auc_mean": 0.5056,
+      "cv_auc_std": 0.0044,
+      "confusion_matrix": {
+        "tn": 18353,
+        "fp": 0,
+        "fn": 4195,
+        "tp": 0
+      }
+    },
+    {
+      "model": "Model B1 · 逻辑回归",
+      "auc": 0.888,
+      "pr_auc": 0.687,
+      "accuracy": 0.8713,
+      "precision": 0.7116,
+      "recall": 0.5182,
+      "f1": 0.5997,
+      "cv_auc_mean": 0.8886,
+      "cv_auc_std": 0.0024,
+      "confusion_matrix": {
+        "tn": 17472,
+        "fp": 881,
+        "fn": 2021,
+        "tp": 2174
+      }
+    },
+    {
+      "model": "Model B2 · 随机森林",
+      "auc": 0.888,
+      "pr_auc": 0.684,
+      "accuracy": 0.8713,
+      "precision": 0.7115,
+      "recall": 0.518,
+      "f1": 0.5995,
+      "cv_auc_mean": 0.8879,
+      "cv_auc_std": 0.0018,
+      "confusion_matrix": {
+        "tn": 17472,
+        "fp": 881,
+        "fn": 2022,
+        "tp": 2173
+      }
+    },
+    {
+      "model": "Model B3 · 梯度提升树",
+      "auc": 0.8885,
+      "pr_auc": 0.683,
+      "accuracy": 0.8713,
+      "precision": 0.7181,
+      "recall": 0.5077,
+      "f1": 0.5949,
+      "cv_auc_mean": 0.8886,
+      "cv_auc_std": 0.0019,
+      "confusion_matrix": {
+        "tn": 17517,
+        "fp": 836,
+        "fn": 2065,
+        "tp": 2130
+      }
+    }
+  ],
+  "best_model": "Model B3 · 梯度提升树",
+  "feature_importance": {
+    "version_gate_40": 0.002,
+    "retained_1": 0.0294,
+    "played_any": 0.002,
+    "log_rounds": 0.3786,
+    "rounds_gt_20": 0.0996,
+    "rounds_gt_50": 0.2075,
+    "bucket_ord": 0.2811
+  },
+  "logistic_coefficients": {
+    "实验分组（gate_40=1）": -0.0384,
+    "是否次日留存": -0.0347,
+    "是否曾游玩（≥1轮）": -0.3832,
+    "游玩深度 log(轮次+1)": 2.1689,
+    "是否游玩>20轮": -0.1219,
+    "是否游玩>50轮": -0.004,
+    "游玩深度等级(0-5)": 0.1096
+  },
+  "lift_high_value": [
+    {
+      "top_pct": 10,
+      "users": 2255,
+      "captured_pct": 41.12,
+      "lift": 4.11,
+      "precision_pct": 76.5
+    },
+    {
+      "top_pct": 20,
+      "users": 4510,
+      "captured_pct": 66.32,
+      "lift": 3.32,
+      "precision_pct": 61.69
+    },
+    {
+      "top_pct": 30,
+      "users": 6765,
+      "captured_pct": 80.38,
+      "lift": 2.68,
+      "precision_pct": 49.84
+    },
+    {
+      "top_pct": 40,
+      "users": 9019,
+      "captured_pct": 88.1,
+      "lift": 2.2,
+      "precision_pct": 40.98
+    },
+    {
+      "top_pct": 50,
+      "users": 11274,
+      "captured_pct": 93.25,
+      "lift": 1.87,
+      "precision_pct": 34.7
+    },
+    {
+      "top_pct": 60,
+      "users": 13529,
+      "captured_pct": 96.07,
+      "lift": 1.6,
+      "precision_pct": 29.79
+    },
+    {
+      "top_pct": 70,
+      "users": 15783,
+      "captured_pct": 97.93,
+      "lift": 1.4,
+      "precision_pct": 26.03
+    },
+    {
+      "top_pct": 80,
+      "users": 18038,
+      "captured_pct": 98.95,
+      "lift": 1.24,
+      "precision_pct": 23.01
+    },
+    {
+      "top_pct": 90,
+      "users": 20293,
+      "captured_pct": 99.59,
+      "lift": 1.11,
+      "precision_pct": 20.59
+    },
+    {
+      "top_pct": 100,
+      "users": 22548,
+      "captured_pct": 100.0,
+      "lift": 1.0,
+      "precision_pct": 18.6
+    }
+  ],
+  "lift_risk": [
+    {
+      "top_pct": 10,
+      "users": 2255,
+      "captured_pct": 12.19,
+      "lift": 1.22,
+      "precision_pct": 99.25
+    },
+    {
+      "top_pct": 20,
+      "users": 4510,
+      "captured_pct": 24.33,
+      "lift": 1.22,
+      "precision_pct": 99.0
+    },
+    {
+      "top_pct": 30,
+      "users": 6765,
+      "captured_pct": 36.39,
+      "lift": 1.21,
+      "precision_pct": 98.71
+    },
+    {
+      "top_pct": 40,
+      "users": 9019,
+      "captured_pct": 48.23,
+      "lift": 1.21,
+      "precision_pct": 98.14
+    },
+    {
+      "top_pct": 50,
+      "users": 11274,
+      "captured_pct": 59.89,
+      "lift": 1.2,
+      "precision_pct": 97.5
+    },
+    {
+      "top_pct": 60,
+      "users": 13529,
+      "captured_pct": 71.0,
+      "lift": 1.18,
+      "precision_pct": 96.31
+    },
+    {
+      "top_pct": 70,
+      "users": 15783,
+      "captured_pct": 81.52,
+      "lift": 1.16,
+      "precision_pct": 94.8
+    },
+    {
+      "top_pct": 80,
+      "users": 18038,
+      "captured_pct": 90.6,
+      "lift": 1.13,
+      "precision_pct": 92.18
+    },
+    {
+      "top_pct": 90,
+      "users": 20293,
+      "captured_pct": 97.11,
+      "lift": 1.08,
+      "precision_pct": 87.82
+    },
+    {
+      "top_pct": 100,
+      "users": 22548,
+      "captured_pct": 100.0,
+      "lift": 1.0,
+      "precision_pct": 81.4
+    }
+  ],
+  "business_reading": {
+    "high_value_top10_capture_pct": 41.12,
+    "high_value_top10_lift": 4.11,
+    "high_value_top30_capture_pct": 80.38,
+    "high_value_top30_lift": 2.68,
+    "risk_top10_capture_pct": 12.19,
+    "risk_top30_capture_pct": 36.39,
+    "conclusion": "前 30% 高潜用户可覆盖约八成留存用户，运营资源应集中投向该人群而非全量撒网"
+  }
+}

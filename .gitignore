@@ -1,0 +1,30 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ---- 环境变量与密钥 ----
+.env
+.env.*
+*.key
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 日志与临时文件 ----
+*.log
+*.tmp
+~$*
+
+# ---- 数据 ----
+# 原始数据保留（保证 clone 即可运行）
+# 清洗中间产物可被 src/run_all.py 重新生成，不入库
+data/cookie_cats_clean.csv
