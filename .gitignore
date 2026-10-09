@@ -28,3 +28,9 @@ desktop.ini
 # 原始数据保留（保证 clone 即可运行）
 # 清洗中间产物可被 src/run_all.py 重新生成，不入库
 data/cookie_cats_clean.csv
+
+# ---- 个人材料（不公开）----
+# 面试题库、方法论详解、简历版项目经历等仅供个人备战使用
+docs/*.md
+*.docx
+*.pdf
