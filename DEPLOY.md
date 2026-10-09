@@ -1,7 +1,7 @@
 # 发布到 GitHub 完整指南
 
 > 本文件记录了把「手游 A/B 实验与留存归因分析」作品集发布到 GitHub 并在线展示的全部步骤。
-> 项目目录：`C:\Users\Sheona\WorkBuddy\2026-05-10-task-2\game-analytics-portfolio`
+> 项目目录：`game-analytics-portfolio`（下文所有命令均在该目录内执行）
 
 ---
 
@@ -44,7 +44,7 @@
 当前提交作者是一个占位身份。改成你 GitHub 账号的信息，提交记录才会关联到你的主页——**面试官点进仓库能看到是你的作品，这一点很重要**。
 
 ```bash
-cd "C:\Users\Sheona\WorkBuddy\2026-05-10-task-2\game-analytics-portfolio"
+cd game-analytics-portfolio
 
 # 换成你 GitHub 的用户名和邮箱
 git config --local user.name "你的GitHub用户名"
@@ -122,7 +122,7 @@ ssh -T git@github.com
 在项目目录执行（**把地址换成你自己的**）：
 
 ```bash
-cd "C:\Users\Sheona\WorkBuddy\2026-05-10-task-2\game-analytics-portfolio"
+cd game-analytics-portfolio
 
 # 关联远程仓库
 # 【方式 A 用这行】
@@ -175,7 +175,7 @@ https://你的用户名.github.io/game-analytics-portfolio/
 改动文件后，三步提交：
 
 ```bash
-cd "C:\Users\Sheona\WorkBuddy\2026-05-10-task-2\game-analytics-portfolio"
+cd game-analytics-portfolio
 git add .
 git commit -m "说明这次改了什么"
 git push
